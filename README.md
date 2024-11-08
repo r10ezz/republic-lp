@@ -1,4 +1,4 @@
 # age-calculator
 
-This project is unfinished
-still in development!!
+This project is unfinished.
+ Still in development!!
