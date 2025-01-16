@@ -1,0 +1,37 @@
+.left-container{
+    display: flex;
+    justify-content: flex-start;
+    text-align: start;
+}
+
+@media (max-width: 768px){
+    .hero-left,
+    .left-container{
+        text-align: center !important;
+    }
+    .hero-header,
+    .hero-desc{
+        width: 100%;
+    }
+    .hero-container{
+        margin-top: 80px;
+        padding: 0 16px;
+    }
+    .navbar-container{
+        padding: 8px 16px;
+    }
+    .form-card{
+        padding: 16px 24px;
+    }
+    .ao-section{
+        padding: 32px 16px;
+    }
+    .faq-section,
+    .footer{
+        padding: 32px 16px;
+    }
+    .form-container{
+        min-height: 520px;
+        align-items: flex-start;
+    }
+}

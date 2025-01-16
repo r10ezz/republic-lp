@@ -5,97 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>
-      Tailwind Starter Template - Landing Page Template: Tailwind Toolbox
+      Republic Day Offer
     </title>
     <meta name="description" content="Simple landind page" />
     <meta name="keywords" content="" />
     <meta name="author" content="" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
     <link
       href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@600&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
-    />
-    <!--Replace with your tailwind.css once created-->
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <link
       href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700"
       rel="stylesheet"
     />
-    <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
     <style>
       .gradient {
-        background: linear-gradient(90deg, #ff671f 0%, #046a38 100%);
+        background-color: #ff671f;
+      }
+      .bg-saffron{
+        background: linear-gradient(90deg, 	#E17B15 0%, #FFA842 100%);
+      }
+      .bg-green{
+        background: linear-gradient(90deg, 	#046A38 0%, #ABE098 100%);
+      }
+      .bg-blue{
+        background: radial-gradient(circle, #6161f3 1%, #FFFFFF 15%);
+        border-top-color: rgb(255, 103, 31, 0.1);
+        border-bottom-color: rgb(4, 106, 56, 0.1);
       }
     </style>
   </head>
   <body
-    class="leading-normal tracking-normal text-white gradient"
+    class="leading-normal tracking-normal text-white bg-saffron"
     style="font-family: Urbanist, serif"
   >
     <!--Nav-->
-    <nav id="header" class="fixed w-full z-30 top-0 text-white">
+    <nav id="header" class="fixed w-full z-30 top-0 text-white ">
       <div
-        class="w-full container mx-auto px-20 flex flex-wrap items-center justify-between mt-0 py-2"
+        class="navbar-container w-full mx-auto px-20 flex flex-wrap items-center justify-between mt-0 py-2"
       >
         <div class="pl-4 flex items-center">
           <a
-            class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
+            class="toggleColour text-white no-underline hover:no-underline font-bold text-4xl "
             href="#"
           >
-            <!--Icon from: http://www.potlabicons.com/ -->
             ERPCA
           </a>
         </div>
-        <div class="block lg:hidden pr-4">
-          <button
-            id="nav-toggle"
-            class="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
-          >
-            <svg
-              class="fill-current h-6 w-6"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Menu</title>
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-            </svg>
-          </button>
-        </div>
-        <div
-          class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20"
-          id="nav-content"
-        >
-          <ul class="list-reset lg:flex justify-end flex-1 items-center"></ul>
+          <ul class="list-reset justify-end flex-1 items-center"></ul>
           <button
             id="navAction"
-            class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+            class="mx-auto hover:underline bg-white text-black font-bold rounded-full py-4 px-8 shadow focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out bg-white"
           >
             Claim Offer
           </button>
-        </div>
       </div>
       <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
     </nav>
     <!--Hero-->
     <div class="pt-16">
-      <div
-        class="container px-20 mx-auto flex flex-wrap flex-col md:flex-row items-center"
-      >
-        <!--Left Col-->
-        <div
-          class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left"
-        >
-          <p class="uppercase tracking-loose w-full">
-            Erpca Subscription Offer
-          </p>
-          <h1 class="my-4 text-5xl font-bold leading-tight">
+      <div class="hero-container px-20 mx-auto flex flex-wrap flex-col md:flex-row md:mt-2 sm:mt-20 items-center">
+        <!-- Left Column -->
+        <div class="hero-left flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left mb-8 md:mb-0 md:mt-8">
+          <p class="uppercase tracking-loose w-full text-xl md:text-2xl">Erpca Subscription Offer</p>
+          <h1 class="hero-header my-4 text-3xl md:text-5xl font-bold leading-tight">
             Get Free WhatsApp Integration - <br />Worth ₹5000
           </h1>
-          <p class="leading-normal text-2xl mb-8">
+          <p class="hero-desc leading-normal text-lg md:text-2xl mb-8">
             Celebrate this Republic Day with an exclusive surprise from ERPCA!
           </p>
           <button
@@ -104,14 +87,10 @@
             Buy Subscription and Save ₹5000
           </button>
         </div>
-        <!--Right Col-->
-        <div
-          class="rd-hero-section flex justify-end items-center min-h-screen bg-gradient-to-br from-orange-500 via-white to-green-700 p-6"
-          style="width: 60%"
-        >
-          <div
-            class="rd-form-container bg-white bg-opacity-90 backdrop-blur-lg rounded-lg p-8 shadow-xl w-full max-w-lg text-center"
-          >
+    
+        <!-- Right Column -->
+        <div class="form-container flex justify-center md:justify-end items-center min-h-screen p-6 w-full md:w-3/5">
+          <div class="form-card rd-form-container bg-white bg-opacity-90 rounded-lg p-8 shadow-xl w-full max-w-lg text-center">
             <h2 class="rd-form-title text-3xl font-bold text-gray-800 mb-6">
               Celebrate Republic Day with Us!
             </h2>
@@ -145,6 +124,7 @@
         </div>
       </div>
     </div>
+    
     <div class="relative -mt-12 lg:-mt-24">
       <svg
         viewBox="0 0 1428 174"
@@ -250,49 +230,155 @@
       </div>
     </section>
 
-    <section class="bg-gray-50 py-16 border-slate-900 border-2 border-solid">
-      <div class="container mx-auto px-4">
-          <h2 class="text-4xl font-bold text-center text-black mb-24">
-            Unlock More with Our Exclusive Addons
-          </h2>
-          
-          <div class="relative">
-              <!-- Icons Container -->
-              <div class="flex justify-center items-center gap-16 mb-12">
-                  <!-- Each icon with its circle background -->
-                  <div class="feature-circle w-28 h-28 rounded-full flex items-center justify-center transition-colors duration-300 cursor-pointer">
-                      <img src="/images/tally.png" alt="Tally Integration" class="w-16 h-16 object-contain transition-transform duration-200 hover:scale-110">
-                  </div>
-                  
-                  <div class="feature-circle w-28 h-28 rounded-full flex items-center justify-center transition-colors duration-300 cursor-pointer">
-                      <img src="/images/payment.png" alt="Secure Payments" class="w-16 h-16 object-contain transition-transform duration-200 hover:scale-110">
-                  </div>
-                  
-                  <div class="feature-circle w-28 h-28 rounded-full flex items-center justify-center transition-colors duration-300 cursor-pointer">
-                      <img src="/images/whatsapp.png" alt="WhatsApp Connect" class="w-16 h-16 object-contain transition-transform duration-200 hover:scale-110">
-                  </div>
-                  
-                  <div class="feature-circle w-28 h-28 rounded-full flex items-center justify-center transition-colors duration-300 cursor-pointer">
-                      <img src="/images/storage.png" alt="Cloud Storage" class="w-16 h-16 object-contain transition-transform duration-200 hover:scale-110">
-                  </div>
-                  
-                  <div class="feature-circle w-28 h-28 rounded-full flex items-center justify-center transition-colors duration-300 cursor-pointer">
-                      <img src="/images/android.png" alt="Android App" class="w-16 h-16 object-contain transition-transform duration-200 hover:scale-110">
-                  </div>
+    <div class="ao-section py-24 px-32 sm:px-8 md:px-10 mx-auto flex flex-col items-center bg-gray-50">
+      <h2 class="mb-1 text-3xl font-extrabold leading-tight text-gray-900">Add-ons</h2>
+      <p class="mb-12 text-lg text-gray-500">Here is a few of the awesome Add-ons we provide.</p>
+      <div class="w-full">
+        <div class="flex flex-col w-full mb-10 sm:flex-row">
+          <div class="w-full mb-10 sm:mb-0 sm:w-1/2">
+            <div class="relative h-full ml-0 mr-0 sm:mr-10">
+              <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-orange-500 rounded-lg" style="background-color: #FF671F;"></span>
+              <div class="relative h-full p-5 bg-white border-2 rounded-lg" style="border-color: #FF671F;">
+                <div class="flex items-center -mt-1">
+                  <img src="images/tally.png" alt="" class="w-16 h-16">
+                  <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Tally Integration</h3>
+                </div>
+                <p class="mt-3 mb-1 text-xs font-medium uppercase" style="color: #FF671F;">------------</p>
+                <p class="mb-2 text-gray-600">Tally Integration connects Tally accounting software with other systems like CRMs, ERPs, or payment gateways to streamline data flow and automate tasks. This integration helps reduce manual entry, improve accuracy, and synchronize financial data in real-time for better efficiency and decision-making.</p>
               </div>
-
-              <!-- Feature Description -->
-              <div class="text-center mb-4">
-                  <h3 class="text-2xl font-bold text-black mb-4" id="feature-title">WhatsApp Connect</h3>
-                  <p class="text-black text-center mx-60 font-semibold opacity-50" id="feature-subtitle">WhatsApp Integration connects WhatsApp with business systems like CRMs or customer support tools, enabling seamless communication with customers. It automates message management, allowing businesses to send notifications, support queries, and updates efficiently while improving customer engagement.</p>
-              </div>
+            </div>
           </div>
+          <div class="w-full sm:w-1/2">
+            <div class="relative h-full ml-0 md:mr-10">
+              <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 rounded-lg" style="background-color: #FF671F;"></span>
+              <div class="relative h-full p-5 bg-white border-2 rounded-lg" style="border-color: #FF671F;">
+                <div class="flex items-center -mt-1">
+                  <img src="images/whatsapp.png" alt="" class="w-16 h-16">
+                  <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Whatsapp Integration</h3>
+                </div>
+                <p class="mt-3 mb-1 text-xs font-medium uppercase" style="color: #FF671F;">------------</p>
+                <p class="mb-2 text-gray-600">WhatsApp Integration connects WhatsApp with business systems like CRMs or customer support tools, enabling seamless communication with customers. It automates message management, allowing businesses to send notifications, support queries, and updates efficiently while improving customer engagement.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="flex flex-col w-full mb-5 sm:flex-row">
+          <div class="w-full mb-10 sm:mb-0 sm:w-1/2">
+            <div class="relative h-full ml-0 mr-0 sm:mr-10">
+              <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 rounded-lg" style="background-color: #06038D;"></span>
+              <div class="relative h-full p-5 bg-white border-2 rounded-lg" style="border-color: #06038D;">
+                <div class="flex items-center -mt-1">
+                  <img src="images/payment.png" alt="" class="w-16 h-16">
+                  <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Payments Integration</h3>
+                </div>
+                <p class="mt-3 mb-1 text-xs font-medium uppercase" style="color: #06038D;">------------</p>
+                <p class="mb-2 text-gray-600">Payments Integration connects payment gateways with business systems, enabling seamless processing of online transactions. It automates payment acceptance, ensuring secure, real-time processing and syncing with accounting or CRM systems, improving efficiency and reducing manual work.</p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full mb-10 sm:mb-0 sm:w-1/2">
+            <div class="relative h-full ml-0 mr-0 sm:mr-10">
+              <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 rounded-lg" style="background-color: #046A38;"></span>
+              <div class="relative h-full p-5 bg-white border-2 rounded-lg" style="border-color: #046A38;">
+                <div class="flex items-center -mt-1">
+                  <img src="images/storage.png" alt="" class="w-16 h-16">
+                  <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Cloud Storage Integration</h3>
+                </div>
+                <p class="mt-3 mb-1 text-xs font-medium uppercase" style="color: #046A38;">------------</p>
+                <p class="mb-2 text-gray-600">Cloud Storage Integration connects cloud storage platforms like Google Drive or Dropbox with business systems, enabling seamless file storage, sharing, and access. It automates data syncing, ensuring secure, real-time updates while improving collaboration and data management across teams.</p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full sm:w-1/2">
+            <div class="relative h-full ml-0 md:mr-10">
+              <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 rounded-lg" style="background-color: #046A38;"></span>
+              <div class="relative h-full p-5 bg-white border-2 rounded-lg" style="border-color: #046A38;">
+                <div class="flex items-center -mt-1">
+                  <img src="images/android.png" alt="" class="w-16 h-16">
+                  <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Branded Mobile App</h3>
+                </div>
+                <p class="mt-3 mb-1 text-xs font-medium uppercase" style="color: #046A38;">------------</p>
+                <p class="mb-2 text-gray-600">A white-labeled mobile app is a pre-built application that can be rebranded and customized by different businesses to align with their brand identity. Companies can add their logo, colors, and design elements while leveraging the app's core functionality. This solution allows businesses to offer a branded mobile app quickly, without the need for custom development from scratch.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-  </section>
+    </div>
+    
+
+    <section class="py-14 bg-blue border-2">
+      <div class="max-w-4xl mx-auto px-4 text-center text-black">
+        <h2 class="text-3xl font-bold">
+          Have more questions? We'd love to help!
+        </h2>
+        <p class="mt-2 text-3xl font-bold">
+          Please contact us at <a href="mailto:help@erpca.com" class="underline">help@erpca.com</a>
+        </p>
+      </div>
+    </section>
+                        
+
+    <div class="faq-section py-24 px-32 mx-auto flex flex-col md:flex-row gap-12 bg-gray-50">
+      <div class="flex flex-col text-left basis-1/2">
+        <p class="sm:text-4xl text-3xl text-black font-bold text-base-content">Frequently Asked Questions</p>
+      </div>
+      <ul class="basis-1/2 text-black">
+        <li>
+          <button class="faq-button relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-base-content/10" aria-expanded="false">
+            <span class="flex-1 text-base-content">What happens if I cancel my subscription?</span>
+            <svg class="flex-shrink-0 w-4 h-4 ml-auto fill-current" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out"></rect>
+              <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out"></rect>
+            </svg>
+          </button>
+          <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden">
+            <div class="pb-5 leading-relaxed">
+              <div class="space-y-2 leading-relaxed">
+                When you cancel your subscription, you’ll retain access to all features until the end of your current billing cycle. After that, your account will be downgraded to a free or limited-access plan, depending on our offerings. No further charges will be made after cancellation.
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <button class="faq-button relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-base-content/10" aria-expanded="false">
+            <span class="flex-1 text-base-content">Can I switch to a different subscription plan?</span>
+            <svg class="flex-shrink-0 w-4 h-4 ml-auto fill-current" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out"></rect>
+              <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out"></rect>
+            </svg>
+          </button>
+          <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden">
+            <div class="pb-5 leading-relaxed">
+              <div class="space-y-2 leading-relaxed">
+                Absolutely! You can upgrade or downgrade your plan anytime from your account settings. If you upgrade, the changes will take effect immediately, and you'll be charged the prorated amount for the new plan. For downgrades, the changes will apply at the start of the next billing cycle.
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <button class="faq-button relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-base-content/10" aria-expanded="false">
+            <span class="flex-1 text-base-content">Do you offer refunds for unused time?</span>
+            <svg class="flex-shrink-0 w-4 h-4 ml-auto fill-current" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out"></rect>
+              <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out"></rect>
+            </svg>
+          </button>
+          <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden">
+            <div class="pb-5 leading-relaxed">
+              <div class="space-y-2 leading-relaxed">
+                Our subscription plans are billed in advance and are non-refundable. However, you will continue to have access to the service until the end of your billing period, even if you cancel early. For any issues, feel free to contact our support team.
+              </div>
+            </div>
+          </div>
+        </li>        
+    </ul>
+</div>
 
     <!-- Change the colour #f8fafc to match the previous section colour -->
     <svg
-      class="wave-top"
+      class="wave-top bg-green"
       viewBox="0 0 1439 147"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
@@ -326,7 +412,7 @@
         </g>
       </g>
     </svg>
-    <section class="container mx-auto text-center py-6 mb-12">
+    <section class=" text-center px-20 py-6 pb-12 bg-green">
       <h2
         class="w-full my-2 text-5xl font-bold leading-tight text-center text-white"
       >
@@ -348,154 +434,67 @@
     </section>
     
     <!--Footer-->
-    <!-- <footer class="bg-white">
-      <div class="container mx-auto px-20">
-        <div class="w-full flex flex-col md:flex-row py-6">
-          <div class="flex-1 text-black">
-            <a
-              class="text-black-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
-              href="#"
-            >
-              ERPCA
-            </a>
-          </div>
-          <div class="flex-1 text-right">
-            <p class="uppercase text-gray-500">© 2024 ERPCA. All rights reserved.</p>
-         </div>
+    <footer class="bg-white dark:bg-gray-900">
+      <div class="footer flex flex-col items-center justify-between px-20 py-4 mx-auto lg:flex-row text-black">
+        <a
+        class="text-black-400 no-underline hover:no-underline font-bold text-lg lg:text-lg"
+        href="#"
+      >
+        ERPCA
+      </a>
+  
+          <p class="mt-6 text-sm text-gray-500 lg:mt-0 dark:text-gray-400">© 2025 ERPCA. All rights reserved.</p>
       </div>
-    </footer> -->
-    <!-- jQuery if you need it
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  -->
+  </footer> 
+ 
     <script>
-      var scrollpos = window.scrollY;
-      var header = document.getElementById("header");
-      var navcontent = document.getElementById("nav-content");
-      var navaction = document.getElementById("navAction");
-      var brandname = document.getElementById("brandname");
-      var toToggle = document.querySelectorAll(".toggleColour");
+$(document).ready(function () {
+  var $header = $("#header");
+  var $navcontent = $("#nav-content");
+  var $navaction = $("#navAction");
+  var $toToggle = $(".toggleColour");
 
-      document.addEventListener("scroll", function () {
-        /*Apply classes for slide in bar*/
-        scrollpos = window.scrollY;
+  $(document).on("scroll", function () {
+    var scrollpos = $(window).scrollTop();
 
-        if (scrollpos > 10) {
-          header.classList.add("bg-white");
-          navaction.classList.remove("bg-white");
-          navaction.classList.add("gradient");
-          navaction.classList.remove("text-gray-800");
-          navaction.classList.add("text-white");
-          //Use to switch toggleColour colours
-          for (var i = 0; i < toToggle.length; i++) {
-            toToggle[i].classList.add("text-gray-800");
-            toToggle[i].classList.remove("text-white");
-          }
-          header.classList.add("shadow");
-          navcontent.classList.remove("bg-gray-100");
-          navcontent.classList.add("bg-white");
-        } else {
-          header.classList.remove("bg-white");
-          navaction.classList.remove("gradient");
-          navaction.classList.add("bg-white");
-          navaction.classList.remove("text-white");
-          navaction.classList.add("text-gray-800");
-          //Use to switch toggleColour colours
-          for (var i = 0; i < toToggle.length; i++) {
-            toToggle[i].classList.add("text-white");
-            toToggle[i].classList.remove("text-gray-800");
-          }
+    if (scrollpos > 10) {
+      $header.addClass("bg-white");
+      $navaction.removeClass("bg-white").addClass("gradient");
+      $navaction.removeClass("text-gray-800").addClass("text-white");
+      $toToggle.addClass("text-gray-800").removeClass("text-white");
+      $header.addClass("shadow");
+      $navcontent.removeClass("bg-gray-100").addClass("bg-white");
+    } else {
+      $header.removeClass("bg-white");
+      $navaction.removeClass("gradient").addClass("bg-white");
+      $navaction.removeClass("text-white").addClass("text-gray-800");
+      $toToggle.addClass("text-white").removeClass("text-gray-800");
+      $header.removeClass("shadow");
+      $navcontent.removeClass("bg-white").addClass("bg-gray-100");
+    }
+  });
 
-          header.classList.remove("shadow");
-          navcontent.classList.remove("bg-white");
-          navcontent.classList.add("bg-gray-100");
-        }
-      });
-    </script>
-    <script>
-      /*Toggle dropdown list*/
-      /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
+  function toggleFAQ(button) {
+    var $button = $(button);
+    var $content = $button.next();
 
-      var navMenuDiv = document.getElementById("nav-content");
-      var navMenu = document.getElementById("nav-toggle");
+    // Toggle aria-expanded attribute
+    var expanded = $button.attr("aria-expanded") === "true";
+    $button.attr("aria-expanded", !expanded);
 
-      document.onclick = check;
-      function check(e) {
-        var target = (e && e.target) || (event && event.srcElement);
+    // Toggle max-height for the content
+    if (!expanded) {
+      $content.css("max-height", $content[0].scrollHeight + "px");
+    } else {
+      $content.css("max-height", "0");
+    }
+  }
 
-        //Nav Menu
-        if (!checkParent(target, navMenuDiv)) {
-          // click NOT on the menu
-          if (checkParent(target, navMenu)) {
-            // click on the link
-            if (navMenuDiv.classList.contains("hidden")) {
-              navMenuDiv.classList.remove("hidden");
-            } else {
-              navMenuDiv.classList.add("hidden");
-            }
-          } else {
-            // click both outside link and outside menu, hide menu
-            navMenuDiv.classList.add("hidden");
-          }
-        }
-      }
-      function checkParent(t, elm) {
-        while (t.parentNode) {
-          if (t == elm) {
-            return true;
-          }
-          t = t.parentNode;
-        }
-        return false;
-      }
-
-      const features = [
-            {
-                title: "Tally Integration",
-                subtitle: "Tally Integration connects Tally accounting software with other systems like CRMs, ERPs, or payment gateways to streamline data flow and automate tasks. This integration helps reduce manual entry, improve accuracy, and synchronize financial data in real-time for better efficiency and decision-making."
-            },
-            {
-                title: "Payment Integration",
-                subtitle: "Payments Integration connects payment gateways with business systems, enabling seamless processing of online transactions. It automates payment acceptance, ensuring secure, real-time processing and syncing with accounting or CRM systems, improving efficiency and reducing manual work."
-            },
-            {
-                title: "WhatsApp Integration",
-                subtitle: "WhatsApp Integration connects WhatsApp with business systems like CRMs or customer support tools, enabling seamless communication with customers. It automates message management, allowing businesses to send notifications, support queries, and updates efficiently while improving customer engagement."
-            },
-            {
-                title: "Cloud Storage Integration",
-                subtitle: "Cloud Storage Integration connects cloud storage platforms like Google Drive or Dropbox with business systems, enabling seamless file storage, sharing, and access. It automates data syncing, ensuring secure, real-time updates while improving collaboration and data management across teams."
-            },
-            {
-                title: "Android App",
-                subtitle: "A white-labeled mobile app is a pre-built application that can be rebranded and customized by different businesses to align with their brand identity. Companies can add their logo, colors, and design elements while leveraging the app's core functionality. This solution allows businesses to offer a branded mobile app quickly, without the need for custom development from scratch."
-            }
-        ];
-
-        const circles = document.querySelectorAll('.feature-circle');
-        const featureTitle = document.getElementById('feature-title');
-        const featureSubtitle = document.getElementById('feature-subtitle');
-
-        function selectFeature(circle, index) {
-            // Remove selection from all circles
-            circles.forEach(c => c.style.backgroundColor = 'transparent');
-            
-            // Add selection to clicked circle
-            circle.style.backgroundColor = '#FF671F'; // Tailwind orange-500
-            
-            // Update feature text
-            featureTitle.textContent = features[index].title;
-            featureSubtitle.textContent = features[index].subtitle;
-        }
-
-        // Initialize with WhatsApp (middle icon) selected
-        window.addEventListener('DOMContentLoaded', () => {
-            selectFeature(circles[2], 2);
-        });
-
-        // Add click handlers
-        circles.forEach((circle, index) => {
-            circle.addEventListener('click', () => selectFeature(circle, index));
-        });
+  // Bind toggleFAQ to buttons
+  $(".faq-button").on("click", function () {
+    toggleFAQ(this);
+  });
+});
 
     </script>
   </body>
