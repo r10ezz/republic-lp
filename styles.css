@@ -1,7 +1,7 @@
 .left-container{
-    display: flex;
-    justify-content: flex-start;
-    text-align: start;
+    display: flex !important;
+    justify-content: flex-start !important;
+    text-align: start !important;
 }
 
 @media (max-width: 768px){
@@ -11,27 +11,27 @@
     }
     .hero-header,
     .hero-desc{
-        width: 100%;
+        width: 100% !important;
     }
     .hero-container{
-        margin-top: 80px;
-        padding: 0 16px;
+        margin-top: 80px !important;
+        padding: 0 16px !important;
     }
     .navbar-container{
-        padding: 8px 16px;
+        padding: 8px 16px !important;
     }
     .form-card{
-        padding: 16px 24px;
+        padding: 16px 24px !important;
     }
     .ao-section{
-        padding: 32px 16px;
+        padding: 32px 16px !important;
     }
     .faq-section,
     .footer{
-        padding: 32px 16px;
+        padding: 32px 16px !important;
     }
     .form-container{
-        min-height: 520px;
-        align-items: flex-start;
+        min-height: 520px !important;
+        align-items: flex-start !important;
     }
 }
